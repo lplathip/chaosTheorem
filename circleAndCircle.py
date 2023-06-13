@@ -10,7 +10,7 @@ def trace_circle_intersection(circle1_center, circle1_radius, circle2_center, ci
     intersection = circle1.intersection(circle2)
 
     if intersection.is_empty:
-        print("No intersection region")
+        print("No intersection region") # This is theoretically not possible to happen as all points joins together at current policy, however, just in case there are errors
         return []
 
     # Check if the intersection has an actual area
@@ -27,19 +27,3 @@ def trace_circle_intersection(circle1_center, circle1_radius, circle2_center, ci
 
     return intersection_region
 
-# Circle coordinates and radius for P1
-circle1_center = (10, 59)
-circle1_radius = 38.41874542459709
-
-# Circle coordinates and radius for P2
-circle2_center = (60, 71)
-circle2_radius = 41.182520563948
-
-# Calculate the intersection region
-intersection_region = trace_circle_intersection(circle1_center, circle1_radius, circle2_center, circle2_radius)
-
-# Print the result
-if intersection_region:
-    print("Intersection Region:", list(intersection_region.exterior.coords)[:-1])
-else:
-    print("No intersection region")
