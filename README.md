@@ -11,4 +11,6 @@ Most of the functions and how it is used is commented next to the line.
 
 More adjustments could be made to produce a more accurate representation of the real world situation.
 
+Older versions can be checked in eg V1, V2, ... as Version 1,... (they are not required)
+
 You are welcome to make changes and copy the code, giving credit as well would be apprechiated :)
